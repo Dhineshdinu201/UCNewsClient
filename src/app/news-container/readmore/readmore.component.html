@@ -1,0 +1,31 @@
+<section class="hero">
+    <div class="container-sm">
+        <div class="col-lg-6 offset-lg-3">
+       
+<div class="cardbox-item">
+    
+    <div class="description w3-myfont">{{ content }}</div>
+    <div class="description">
+     <p *ngIf="!isContentToggled" (click)="toggleContent()" i18n>Read More</p>
+     <p *ngIf="isContentToggled" (click)="toggleContent()" i18n>Read Less</p>
+     </div>
+   
+   </div><!--/ cardbox-item -->
+   <div class='footer'>
+   
+     <div class='react'>
+       <a href='#' role='button'><span class='love'></span></a>
+       <a href='#' role='button'><span class='comment'></span></a>
+       <a href='#' role='button'><span class='save'></span></a>
+   
+     </div>
+   
+     <div class='comment-section'>
+       <input type='text' id='cmnt' placeholder='Add a comment...'>
+       <span class='dot02'></span>
+     </div>
+   
+   </div><!-- end Footer -->
+</div>
+</div>
+</section>
